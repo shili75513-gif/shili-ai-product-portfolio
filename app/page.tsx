@@ -19,6 +19,7 @@ export default function Home() {
           <a href="#mindset">产品能力</a>
           <a href="#work">产品作品</a>
           <a href="#experience">个人经历</a>
+          <a href="/resume">动态简历</a>
         </div>
         <a className="contact-link" href="mailto:hello@example.com">联系我 <Arrow /></a>
       </nav>
@@ -114,7 +115,7 @@ export default function Home() {
 
       <footer className="wrap glass">
         <div><span>LET&apos;S BUILD</span><h2>有值得解决的问题？<br /><a href="mailto:hello@example.com">一起做成产品。<Arrow /></a></h2></div>
-        <div className="footer-meta"><p>期待 AI 产品、平台产品与用户增长方向的机会。</p><a href="mailto:hello@example.com">hello@example.com</a><span>© 2026 LIN CHE</span></div>
+        <div className="footer-meta"><p>期待 AI 产品、平台产品与用户增长方向的机会。</p><a href="/resume">生成岗位匹配简历 ↗</a><a href="mailto:hello@example.com">hello@example.com</a><span>© 2026 LIN CHE · <a href="/resume/admin">简历后台</a></span></div>
       </footer>
     </main>
   );
