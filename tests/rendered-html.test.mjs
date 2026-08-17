@@ -25,12 +25,17 @@ test("server-renders the product portfolio", async () => {
   assert.match(html, /把想法做成/);
   assert.match(html, /百货产品智能客服/);
   assert.match(html, /AI 自动化运营/);
+  assert.match(html, /AI 运营负责人 · Shopee/);
+  assert.doesNotMatch(html, /Shopee 泰国市场|SHOPEE · THAILAND/);
   assert.match(html, /复杂行业能力底座/);
   assert.match(html, /PORTFOLIO BOARD · 05 ITEMS/);
   assert.match(html, /AI 生成视频/);
   assert.match(html, /产品演示视频/);
   assert.match(html, /方案设计师 · 复杂项目解决方案/);
   assert.match(html, /驻场项目顾问 · 造价与风险控制/);
+  assert.match(html, /WORK EXPERIENCE/);
+  assert.match(html, /工作经历/);
+  assert.doesNotMatch(html, /AI 经历优先|完整经历保留|非 AI 经历完整保留/);
   assert.match(html, /id="mindset"/);
   assert.match(html, /id="work"/);
   assert.match(html, /id="live-demo"/);
@@ -51,6 +56,8 @@ test("keeps navigation, metadata, and responsive safeguards intact", async () =>
     assert.match(page, new RegExp(`href=["']${target}["']|id=["']${target.slice(1)}["']`));
   }
   assert.match(page, /title="百货产品智能客服演示"/);
+  assert.match(page, /className="inline-demo"/);
+  assert.doesNotMatch(page, /className="demo-section/);
   assert.doesNotMatch(page, /室内智能体|户型参数|室内空间/);
   assert.match(page, /mailto:646146548@qq\.com/);
   assert.doesNotMatch(page, /shili_ai@example\.com/);

@@ -82,20 +82,19 @@ export default function Home() {
               <div className="project-copy"><small>PRODUCT STORY</small><h3>产品演示视频</h3><p>预留给产品功能、使用流程与实验影像，作为产品作品库中的持续扩展位。</p></div>
             </article>
 
-            <a className="project-card featured glass" href="#live-demo">
-              <div className="project-top"><span>03 · LIVE PRODUCT</span><Arrow /></div>
-              <div className="chat-visual" aria-hidden="true">
-                <div className="bubble bot">您好，欢迎来到百货智能客服。</div>
-                <div className="bubble user">帮我查找适合送礼的商品</div>
-                <div className="bubble bot short">正在为您匹配商品与活动...</div>
+            <article className="project-card featured inline-demo-card glass" id="live-demo">
+              <div className="project-top"><span>03 · LIVE PRODUCT</span><span>LIVE</span></div>
+              <div className="inline-demo">
+                <div className="inline-demo-bar"><span>CONVERSATION LAB</span><span><i /> LIVE</span></div>
+                <iframe src="https://udify.app/chatbot/6REmnCrTm6etK3nL" title="百货产品智能客服演示" allow="microphone;clipboard-write" />
               </div>
               <div className="project-copy"><small>RETAIL AI SERVICE</small><h3>百货产品智能客服</h3><p>面向百货消费场景的商品咨询、需求识别与多轮导购服务。</p></div>
-            </a>
+            </article>
 
             <article className="project-card ai-ops-card glass">
               <div className="project-top"><span>04 · AI OPERATIONS</span><span>2024 — 2025</span></div>
               <div className="metric-visual" aria-hidden="true"><strong>3天<small>→ 8小时</small></strong><span>上新效率提升 300%</span></div>
-              <div className="project-copy"><small>SHOPEE · THAILAND</small><h3>AI 自动化运营</h3><p>搭建内容生成、翻译、人工复检与 ERP 路由流程，带动转化提升 45%，供应链响应提速 50%。</p></div>
+              <div className="project-copy"><small>SHOPEE</small><h3>AI 自动化运营</h3><p>搭建内容生成、翻译、人工复检与 ERP 路由流程，带动转化提升 45%，供应链响应提速 50%。</p></div>
             </article>
 
             <article className="project-card foundation-card glass">
@@ -105,7 +104,7 @@ export default function Home() {
                 <span><b>红坳幼儿园改造</b><small>独立交付 · 证据链 · 项目经营</small></span>
                 <span><b>王若飞故居陈列馆</b><small>用户动线 · 流程标准化 · 团队管理</small></span>
               </div>
-              <div className="project-copy"><small>TRANSFERABLE CAPABILITIES</small><h3>复杂行业能力底座</h3><p>完整保留传统项目，并提炼 AI 产品岗位同样需要的业务建模、流程治理和落地能力。</p></div>
+              <div className="project-copy"><small>TRANSFERABLE CAPABILITIES</small><h3>复杂行业能力底座</h3><p>覆盖智慧医疗、教育空间与公共展陈等复杂场景，沉淀需求建模、流程治理与跨方交付能力。</p></div>
             </article>
 
             </div>
@@ -113,23 +112,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="demo-section wrap" id="live-demo">
-        <div className="demo-intro">
-          <div><span className="demo-index">CASE 01 / RETAIL AI</span><h2>百货产品<br />智能客服</h2></div>
-          <div className="demo-summary"><p>围绕百货消费场景设计的对话式导购产品。通过自然语言识别商品需求、澄清预算与用途，并完成咨询应答和商品推荐。</p><dl><div><dt>角色</dt><dd>产品策略 / 对话设计 / 体验验收</dd></div><div><dt>能力</dt><dd>需求识别 / 多轮导购 / 商品知识库</dd></div><div><dt>验证</dt><dd>解决率 / 推荐准确率 / 用户满意度</dd></div></dl></div>
-        </div>
-        <div className="demo-window glass">
-          <div className="window-bar"><div><i /><i /><i /></div><span>CONVERSATION LAB</span><span className="window-live"><i /> LIVE DEMO</span></div>
-          <div className="iframe-wrap"><iframe src="https://udify.app/chatbot/6REmnCrTm6etK3nL" title="百货产品智能客服演示" allow="microphone;clipboard-write" /></div>
-        </div>
-      </section>
-
       <section className="experience wrap" id="experience">
-        <div className="section-head"><span>EXPERIENCE INDEX</span><h2>AI 经历优先，<br />完整经历保留。</h2></div>
+        <div className="section-head"><span>WORK EXPERIENCE</span><h2>工作经历</h2></div>
         <div className="experience-list">
           <article><span>2025.04 — NOW</span><div><h3>AI 产品 Demo 搭建与闭环验证</h3><p>使用 Cursor、V0 快速开发交互 Demo，通过 Coze 编排工作流与多 Agent 协同，把产品假设推进到可操作、可验证的原型。</p></div><b>AI 产品 / 原型 / Agent</b></article>
-          <article><span>2024.10 — 2025.04</span><div><h3>AI 运营负责人 · Shopee 泰国市场</h3><p>搭建 AI 描述生成、翻译与人工复检工作流，并引入 ERP 自动化。产品上新由 3 天缩短至 8 小时，转化提升 45%，供应链响应提速 50%。</p></div><b>AI 运营 / 电商 / 增长</b></article>
-          <div className="experience-divider"><span>TRANSFERABLE FOUNDATION</span><p>非 AI 经历完整保留，重点呈现可迁移到 AI 产品工作的能力。</p></div>
+          <article><span>2024.10 — 2025.04</span><div><h3>AI 运营负责人 · Shopee</h3><p>搭建 AI 描述生成、翻译与人工复检工作流，并引入 ERP 自动化。产品上新由 3 天缩短至 8 小时，转化提升 45%，供应链响应提速 50%。</p></div><b>AI 运营 / 电商 / 增长</b></article>
+          <div className="experience-divider"><span>PROFESSIONAL FOUNDATION</span><p>方案设计、ToB 咨询与复杂项目全流程交付经历</p></div>
           <article className="secondary-experience"><span>2024.10 — NOW</span><div><h3>独立项目顾问 · 造价与设计交付</h3><p>独立承接学校装修、市政与机电项目，覆盖清标、设计变更、现场核查、竣工图及结算编制；以证据链和流程管理保障复杂项目落地。</p></div><b>独立经营 / 流程 / 交付</b></article>
           <article className="secondary-experience"><span>2022.09 — 2024.06</span><div><h3>政企 ToB 解决方案咨询专家</h3><p>累计主导及参与 58 个园区、智慧医疗与云计算中心项目，总规模约 30 亿元；通过需求拆解、方案比选与成本模型实现 15% 至 20% 的综合成本优化。</p></div><b>解决方案 / ToB / 交付</b></article>
           <article className="secondary-experience"><span>2020.11 — 2022.08</span><div><h3>驻场项目顾问 · 造价与风险控制</h3><p>负责招投标、工程签证、设计变更与进度付款审核，优化节点执行和资料流转，项目商务交付效率提升约 20%，结算资料及价格合规率达 100%。</p></div><b>项目管理 / 风控 / 协同</b></article>
