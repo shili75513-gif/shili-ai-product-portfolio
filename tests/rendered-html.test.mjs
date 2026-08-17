@@ -47,6 +47,8 @@ test("keeps navigation, metadata, and responsive safeguards intact", async () =>
   }
   assert.match(page, /title="百货产品智能客服演示"/);
   assert.doesNotMatch(page, /室内智能体|户型参数|室内空间/);
+  assert.match(page, /mailto:646146548@qq\.com/);
+  assert.doesNotMatch(page, /shili_ai@example\.com/);
   assert.match(page, /微信 · SHILI75513/);
   assert.match(page, /公众号 · lily_75513/);
   assert.match(layout, /lang="zh-CN"/);
