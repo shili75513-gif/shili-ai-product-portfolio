@@ -21,9 +21,11 @@ test("server-renders the product portfolio", async () => {
 
   const html = await response.text();
   assert.match(html, /<html lang="zh-CN">/i);
-  assert.match(html, /<title>林澈 · 产品经理与数字产品作品集<\/title>/i);
+  assert.match(html, /<title>施丽 · AI 产品经理与解决方案作品集<\/title>/i);
   assert.match(html, /把想法做成/);
-  assert.match(html, /持续生长的产品作品库/);
+  assert.match(html, /百货产品智能客服/);
+  assert.match(html, /AI 自动化运营/);
+  assert.match(html, /复杂行业能力底座/);
   assert.match(html, /id="mindset"/);
   assert.match(html, /id="work"/);
   assert.match(html, /id="live-demo"/);
@@ -43,7 +45,10 @@ test("keeps navigation, metadata, and responsive safeguards intact", async () =>
   for (const target of ["#top", "#mindset", "#work", "#experience", "#live-demo"]) {
     assert.match(page, new RegExp(`href=["']${target}["']|id=["']${target.slice(1)}["']`));
   }
-  assert.match(page, /title="AI 智能客服对话流演示"/);
+  assert.match(page, /title="百货产品智能客服演示"/);
+  assert.doesNotMatch(page, /室内智能体|户型参数|室内空间/);
+  assert.match(page, /微信 · SHILI75513/);
+  assert.match(page, /公众号 · lily_75513/);
   assert.match(layout, /lang="zh-CN"/);
   assert.match(css, /@media\(max-width:620px\)/);
   assert.match(css, /prefers-reduced-motion:reduce/);
