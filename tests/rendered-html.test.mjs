@@ -60,7 +60,7 @@ test("keeps navigation, metadata, and responsive safeguards intact", async () =>
   assert.match(css, /@media\(max-width:620px\)/);
   assert.match(css, /prefers-reduced-motion:reduce/);
   assert.match(css, /focus-visible/);
-  assert.match(css, /grid-auto-flow:column/);
-  assert.match(css, /scroll-snap-type:x mandatory/);
+  assert.match(css, /grid-template-columns:repeat\(6,minmax\(0,1fr\)\)/);
+  assert.match(css, /\.project-board \.video-slot\{grid-column:span 3\}/);
   assert.doesNotMatch(packageJson, /WRANGLER_LOG_PATH=/);
 });

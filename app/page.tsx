@@ -68,10 +68,22 @@ export default function Home() {
           </div>
 
           <div className="project-board glass">
-            <div className="board-bar"><span>PORTFOLIO BOARD · 05 ITEMS</span><span>横向浏览 →</span></div>
+            <div className="board-bar"><span>PORTFOLIO BOARD · 05 ITEMS</span><span>RESPONSIVE GRID</span></div>
             <div className="project-grid">
+            <article className="project-card video-slot glass" aria-label="AI 生成视频作品预留位">
+              <div className="project-top"><span>01 · VIDEO WORK</span><span>待接入</span></div>
+              <div className="video-visual" aria-hidden="true"><span className="play">▶</span><span className="frame-code">PLACEHOLDER / 01</span></div>
+              <div className="project-copy"><small>GENERATIVE MEDIA</small><h3>AI 生成视频</h3><p>预留给叙事短片、商业视觉与多模态生成作品，后续可直接替换为真实视频。</p></div>
+            </article>
+
+            <article className="project-card video-slot glass" aria-label="产品演示视频作品预留位">
+              <div className="project-top"><span>02 · VIDEO WORK</span><span>待接入</span></div>
+              <div className="video-visual" aria-hidden="true"><span className="play">▶</span><span className="frame-code">PLACEHOLDER / 02</span></div>
+              <div className="project-copy"><small>PRODUCT STORY</small><h3>产品演示视频</h3><p>预留给产品功能、使用流程与实验影像，作为产品作品库中的持续扩展位。</p></div>
+            </article>
+
             <a className="project-card featured glass" href="#live-demo">
-              <div className="project-top"><span>01 · LIVE PRODUCT</span><Arrow /></div>
+              <div className="project-top"><span>03 · LIVE PRODUCT</span><Arrow /></div>
               <div className="chat-visual" aria-hidden="true">
                 <div className="bubble bot">您好，欢迎来到百货智能客服。</div>
                 <div className="bubble user">帮我查找适合送礼的商品</div>
@@ -81,13 +93,13 @@ export default function Home() {
             </a>
 
             <article className="project-card ai-ops-card glass">
-              <div className="project-top"><span>02 · AI OPERATIONS</span><span>2024 — 2025</span></div>
+              <div className="project-top"><span>04 · AI OPERATIONS</span><span>2024 — 2025</span></div>
               <div className="metric-visual" aria-hidden="true"><strong>3天<small>→ 8小时</small></strong><span>上新效率提升 300%</span></div>
               <div className="project-copy"><small>SHOPEE · THAILAND</small><h3>AI 自动化运营</h3><p>搭建内容生成、翻译、人工复检与 ERP 路由流程，带动转化提升 45%，供应链响应提速 50%。</p></div>
             </article>
 
             <article className="project-card foundation-card glass">
-              <div className="project-top"><span>DOMAIN FOUNDATION</span><span>9 YEARS</span></div>
+              <div className="project-top"><span>05 · DOMAIN FOUNDATION</span><span>9 YEARS</span></div>
               <div className="foundation-list">
                 <span><b>南科大附属医院</b><small>复杂需求拆解 · 多方协同 · 成本模型</small></span>
                 <span><b>红坳幼儿园改造</b><small>独立交付 · 证据链 · 项目经营</small></span>
@@ -96,17 +108,6 @@ export default function Home() {
               <div className="project-copy"><small>TRANSFERABLE CAPABILITIES</small><h3>复杂行业能力底座</h3><p>完整保留传统项目，并提炼 AI 产品岗位同样需要的业务建模、流程治理和落地能力。</p></div>
             </article>
 
-            <article className="project-card video-slot glass" aria-label="AI 生成视频作品预留位">
-              <div className="project-top"><span>04 · VIDEO WORK</span><span>待接入</span></div>
-              <div className="video-visual" aria-hidden="true"><span className="play">▶</span><span className="frame-code">PLACEHOLDER / 01</span></div>
-              <div className="project-copy"><small>GENERATIVE MEDIA</small><h3>AI 生成视频</h3><p>预留给叙事短片、商业视觉与多模态生成作品，后续可直接替换为真实视频。</p></div>
-            </article>
-
-            <article className="project-card video-slot glass" aria-label="产品演示视频作品预留位">
-              <div className="project-top"><span>05 · VIDEO WORK</span><span>待接入</span></div>
-              <div className="video-visual" aria-hidden="true"><span className="play">▶</span><span className="frame-code">PLACEHOLDER / 02</span></div>
-              <div className="project-copy"><small>PRODUCT STORY</small><h3>产品演示视频</h3><p>预留给产品功能、使用流程与实验影像，作为产品作品库中的持续扩展位。</p></div>
-            </article>
             </div>
           </div>
         </div>
