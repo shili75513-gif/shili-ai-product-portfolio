@@ -67,7 +67,9 @@ export default function Home() {
             <p>不只陈列结果，也开放真实体验。这里会持续收录 AI 产品、生成式影像和新的数字实验。</p>
           </div>
 
-          <div className="project-grid">
+          <div className="project-board glass">
+            <div className="board-bar"><span>PORTFOLIO BOARD · 05 ITEMS</span><span>横向浏览 →</span></div>
+            <div className="project-grid">
             <a className="project-card featured glass" href="#live-demo">
               <div className="project-top"><span>01 · LIVE PRODUCT</span><Arrow /></div>
               <div className="chat-visual" aria-hidden="true">
@@ -91,8 +93,21 @@ export default function Home() {
                 <span><b>红坳幼儿园改造</b><small>独立交付 · 证据链 · 项目经营</small></span>
                 <span><b>王若飞故居陈列馆</b><small>用户动线 · 流程标准化 · 团队管理</small></span>
               </div>
-              <div className="project-copy"><small>TRANSFERABLE CAPABILITIES</small><h3>复杂行业能力底座</h3><p>传统项目仅作为 AI 产品岗位所需的业务建模、流程治理和落地能力证明。</p></div>
+              <div className="project-copy"><small>TRANSFERABLE CAPABILITIES</small><h3>复杂行业能力底座</h3><p>完整保留传统项目，并提炼 AI 产品岗位同样需要的业务建模、流程治理和落地能力。</p></div>
             </article>
+
+            <article className="project-card video-slot glass" aria-label="AI 生成视频作品预留位">
+              <div className="project-top"><span>04 · VIDEO WORK</span><span>待接入</span></div>
+              <div className="video-visual" aria-hidden="true"><span className="play">▶</span><span className="frame-code">PLACEHOLDER / 01</span></div>
+              <div className="project-copy"><small>GENERATIVE MEDIA</small><h3>AI 生成视频</h3><p>预留给叙事短片、商业视觉与多模态生成作品，后续可直接替换为真实视频。</p></div>
+            </article>
+
+            <article className="project-card video-slot glass" aria-label="产品演示视频作品预留位">
+              <div className="project-top"><span>05 · VIDEO WORK</span><span>待接入</span></div>
+              <div className="video-visual" aria-hidden="true"><span className="play">▶</span><span className="frame-code">PLACEHOLDER / 02</span></div>
+              <div className="project-copy"><small>PRODUCT STORY</small><h3>产品演示视频</h3><p>预留给产品功能、使用流程与实验影像，作为产品作品库中的持续扩展位。</p></div>
+            </article>
+            </div>
           </div>
         </div>
       </section>
@@ -109,11 +124,15 @@ export default function Home() {
       </section>
 
       <section className="experience wrap" id="experience">
-        <div className="section-head"><span>EXPERIENCE INDEX</span><h2>用结果记录经历。</h2></div>
+        <div className="section-head"><span>EXPERIENCE INDEX</span><h2>AI 经历优先，<br />完整经历保留。</h2></div>
         <div className="experience-list">
           <article><span>2025.04 — NOW</span><div><h3>AI 产品 Demo 搭建与闭环验证</h3><p>使用 Cursor、V0 快速开发交互 Demo，通过 Coze 编排工作流与多 Agent 协同，把产品假设推进到可操作、可验证的原型。</p></div><b>AI 产品 / 原型 / Agent</b></article>
           <article><span>2024.10 — 2025.04</span><div><h3>AI 运营负责人 · Shopee 泰国市场</h3><p>搭建 AI 描述生成、翻译与人工复检工作流，并引入 ERP 自动化。产品上新由 3 天缩短至 8 小时，转化提升 45%，供应链响应提速 50%。</p></div><b>AI 运营 / 电商 / 增长</b></article>
-          <article><span>2022.09 — 2024.06</span><div><h3>政企 ToB 解决方案咨询专家</h3><p>累计主导 58 个园区、智慧医疗与云计算中心项目，总预算近 30 亿元；通过方案比选与工程精算，平均实现 15% 至 20% 的降本增效。</p></div><b>解决方案 / ToB / 交付</b></article>
+          <div className="experience-divider"><span>TRANSFERABLE FOUNDATION</span><p>非 AI 经历完整保留，重点呈现可迁移到 AI 产品工作的能力。</p></div>
+          <article className="secondary-experience"><span>2024.10 — NOW</span><div><h3>独立项目顾问 · 造价与设计交付</h3><p>独立承接学校装修、市政与机电项目，覆盖清标、设计变更、现场核查、竣工图及结算编制；以证据链和流程管理保障复杂项目落地。</p></div><b>独立经营 / 流程 / 交付</b></article>
+          <article className="secondary-experience"><span>2022.09 — 2024.06</span><div><h3>政企 ToB 解决方案咨询专家</h3><p>累计主导及参与 58 个园区、智慧医疗与云计算中心项目，总规模约 30 亿元；通过需求拆解、方案比选与成本模型实现 15% 至 20% 的综合成本优化。</p></div><b>解决方案 / ToB / 交付</b></article>
+          <article className="secondary-experience"><span>2020.11 — 2022.08</span><div><h3>驻场项目顾问 · 造价与风险控制</h3><p>负责招投标、工程签证、设计变更与进度付款审核，优化节点执行和资料流转，项目商务交付效率提升约 20%，结算资料及价格合规率达 100%。</p></div><b>项目管理 / 风控 / 协同</b></article>
+          <article className="secondary-experience"><span>2015.07 — 2020.10</span><div><h3>方案设计师 · 复杂项目解决方案</h3><p>负责 15+ 大型展馆及公共建筑项目，从甲方需求、参观动线和内容叙事，到 CAD 深化、方案汇报与现场落地；在王若飞故居陈列馆项目中管理 3 名设计师，并推动设计流程标准化。</p></div><b>用户体验 / 设计 / 标准化</b></article>
         </div>
       </section>
 

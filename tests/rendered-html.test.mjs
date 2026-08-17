@@ -26,6 +26,11 @@ test("server-renders the product portfolio", async () => {
   assert.match(html, /百货产品智能客服/);
   assert.match(html, /AI 自动化运营/);
   assert.match(html, /复杂行业能力底座/);
+  assert.match(html, /PORTFOLIO BOARD · 05 ITEMS/);
+  assert.match(html, /AI 生成视频/);
+  assert.match(html, /产品演示视频/);
+  assert.match(html, /方案设计师 · 复杂项目解决方案/);
+  assert.match(html, /驻场项目顾问 · 造价与风险控制/);
   assert.match(html, /id="mindset"/);
   assert.match(html, /id="work"/);
   assert.match(html, /id="live-demo"/);
@@ -55,5 +60,7 @@ test("keeps navigation, metadata, and responsive safeguards intact", async () =>
   assert.match(css, /@media\(max-width:620px\)/);
   assert.match(css, /prefers-reduced-motion:reduce/);
   assert.match(css, /focus-visible/);
+  assert.match(css, /grid-auto-flow:column/);
+  assert.match(css, /scroll-snap-type:x mandatory/);
   assert.doesNotMatch(packageJson, /WRANGLER_LOG_PATH=/);
 });
