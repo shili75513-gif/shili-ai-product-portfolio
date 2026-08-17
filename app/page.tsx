@@ -20,7 +20,7 @@ export default function Home() {
           <a href="#work">产品作品</a>
           <a href="#experience">个人经历</a>
         </div>
-        <a className="contact-link" href="mailto:646146548@qq.com">联系我 <Arrow /></a>
+        <a className="contact-link" href="#contact">联系我 <Arrow /></a>
       </nav>
 
       <section className="hero wrap">
@@ -125,7 +125,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="wrap glass">
+      <footer className="wrap glass" id="contact">
         <div><span>LET&apos;S BUILD</span><h2>有值得解决的问题？<br /><a href="mailto:646146548@qq.com">一起做成产品。<Arrow /></a></h2></div>
         <div className="footer-meta"><p>期待 AI 产品经理、AI 运营、AI 解决方案与 AI 销售方向的机会，可接受全国业务挑战。</p><div className="contact-stack"><a href="mailto:646146548@qq.com">邮箱 · 646146548@qq.com</a><span>微信 · SHILI75513</span><span>公众号 · lily_75513</span></div><span>© 2026 SHI LI</span></div>
       </footer>

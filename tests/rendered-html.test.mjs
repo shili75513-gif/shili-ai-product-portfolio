@@ -40,6 +40,7 @@ test("server-renders the product portfolio", async () => {
   assert.match(html, /id="work"/);
   assert.match(html, /id="live-demo"/);
   assert.match(html, /id="experience"/);
+  assert.match(html, /id="contact"/);
   assert.match(html, /https:\/\/udify\.app\/chatbot\/6REmnCrTm6etK3nL/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
 });
@@ -52,7 +53,7 @@ test("keeps navigation, metadata, and responsive safeguards intact", async () =>
     readFile(new URL("../package.json", import.meta.url), "utf8"),
   ]);
 
-  for (const target of ["#top", "#mindset", "#work", "#experience", "#live-demo"]) {
+  for (const target of ["#top", "#mindset", "#work", "#experience", "#live-demo", "#contact"]) {
     assert.match(page, new RegExp(`href=["']${target}["']|id=["']${target.slice(1)}["']`));
   }
   assert.match(page, /title="百货产品智能客服演示"/);
@@ -60,6 +61,7 @@ test("keeps navigation, metadata, and responsive safeguards intact", async () =>
   assert.doesNotMatch(page, /className="demo-section/);
   assert.doesNotMatch(page, /室内智能体|户型参数|室内空间/);
   assert.match(page, /mailto:646146548@qq\.com/);
+  assert.match(page, /className="contact-link" href="#contact"/);
   assert.doesNotMatch(page, /shili_ai@example\.com/);
   assert.match(page, /微信 · SHILI75513/);
   assert.match(page, /公众号 · lily_75513/);
